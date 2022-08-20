@@ -10,8 +10,8 @@
         <Label Content="Sensor Name" HorizontalAlignment="Left" Margin="29,53,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
         <Label Content="Sensor Type" HorizontalAlignment="Left" Margin="29,175,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
         <TextBox x:Name="SensorNameTB" HorizontalAlignment="Left" Margin="29,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontWeight="Bold" FontSize="24"/>
-        <TextBox x:Name="SensorTypeTB" HorizontalAlignment="Left" Margin="29,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontWeight="Bold" FontSize="24"/>
         <Button Content="Save" HorizontalAlignment="Left" Margin="285,288,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="115" Click="Button_Click"/>
+        <ComboBox x:Name="ComboSensorType" HorizontalAlignment="Left" Margin="29,222,0,0" VerticalAlignment="Top" Width="196" FontSize="24" FontWeight="Bold"/>
 
     </Grid>
 </Window>

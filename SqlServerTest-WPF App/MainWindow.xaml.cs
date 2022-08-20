@@ -24,6 +24,7 @@ namespace SqlServerTest_WPF_App
         public MainWindow()
         {
             InitializeComponent();
+            FillSensorTypeComboBox();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -34,10 +35,22 @@ namespace SqlServerTest_WPF_App
         void SaveData()
         {
             string sensorName = SensorNameTB.Text;
-            string sensorType = SensorTypeTB.Text;
+            string sensorType = ComboSensorType.Text;
 
             Sensor sensor = new Sensor();
             sensor.SaveData(sensorName, sensorType);
+        }
+
+        void FillSensorTypeComboBox()
+        {
+            SensorType sensorType = new SensorType();
+
+            List<SensorType> sensorTypeList = sensorType.GetSensorTypes();
+
+            foreach (SensorType sensorTypeItem in sensorTypeList)
+            {
+                ComboSensorType.Items.Add(sensorTypeItem.sensorTypeName);
+            }
         }
     }
 }

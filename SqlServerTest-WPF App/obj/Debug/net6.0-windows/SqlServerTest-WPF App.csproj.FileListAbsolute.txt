@@ -1,0 +1,46 @@
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\SqlServerTest-WPF App.exe
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\SqlServerTest-WPF App.deps.json
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\SqlServerTest-WPF App.runtimeconfig.json
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\SqlServerTest-WPF App.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\SqlServerTest-WPF App.pdb
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App.csproj.AssemblyReference.cache
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\App.g.cs
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App_MarkupCompile.cache
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App_MarkupCompile.lref
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\MainWindow.baml
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App.g.resources
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App.AssemblyInfoInputs.cache
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App.AssemblyInfo.cs
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App.csproj.CoreCompileInputs.cache
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\refint\SqlServerTest-WPF App.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App.pdb
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App.genruntimeconfig.cache
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\ref\SqlServerTest-WPF App.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Azure.Core.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Azure.Identity.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\System.Memory.Data.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\obj\Debug\net6.0-windows\SqlServerTest-WPF App.csproj.CopyComplete
+E:\Projects\C# Programs\SqlServerTest-WPF App\SqlServerTest-WPF App\bin\Debug\net6.0-windows\SqlServerTest-WPF App.dll.config

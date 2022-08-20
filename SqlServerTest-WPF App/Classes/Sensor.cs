@@ -25,10 +25,19 @@ namespace SqlServerTest_WPF_App.Classes
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
-            catch (Exception)
+            catch (SqlException ex)
             {
+                if (ex.Number == 2627)
+                {
+                    MessageBox.Show("This sensor name is already used.");
+                    return;
+                }
 
                 MessageBox.Show("Error when inserting data to the database.");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Unexpected error.");
             }
         }
     }

@@ -30,21 +30,30 @@ namespace SqlServerTest_WPF_App
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"];
-            SqlConnection con = new SqlConnection(settings.ConnectionString);
-            con.Open();
+            try
+            {
+                ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"];
+                SqlConnection con = new SqlConnection(settings.ConnectionString);
+                con.Open();
 
-            SqlCommand cmd = new SqlCommand("SaveSensor ", con);
-            cmd.CommandType = CommandType.StoredProcedure;
+                SqlCommand cmd = new SqlCommand("SaveSensor2", con);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-            string sensorName = SensorNameTB.Text;
-            string sensorType = SensorTypeTB.Text;
+                string sensorName = SensorNameTB.Text;
+                string sensorType = SensorTypeTB.Text;
 
-            cmd.Parameters.Add(new SqlParameter("@SensorName",sensorName));
-            cmd.Parameters.Add(new SqlParameter("@SensorType",sensorType));
+                cmd.Parameters.Add(new SqlParameter("@SensorName", sensorName));
+                cmd.Parameters.Add(new SqlParameter("@SensorType", sensorType));
 
-            cmd.ExecuteNonQuery();
-            con.Close();
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error when inserting data to the database.");
+            }
+
         }
     }
 }

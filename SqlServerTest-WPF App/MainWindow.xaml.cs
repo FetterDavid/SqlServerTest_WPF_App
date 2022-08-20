@@ -12,9 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Microsoft.Data.SqlClient;
-using System.Configuration;
-using System.Data;
+using SqlServerTest_WPF_App.Classes;
 
 namespace SqlServerTest_WPF_App
 {
@@ -30,30 +28,16 @@ namespace SqlServerTest_WPF_App
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"];
-                SqlConnection con = new SqlConnection(settings.ConnectionString);
-                con.Open();
+            SaveData();
+        }
 
-                SqlCommand cmd = new SqlCommand("SaveSensor2", con);
-                cmd.CommandType = CommandType.StoredProcedure;
+        void SaveData()
+        {
+            string sensorName = SensorNameTB.Text;
+            string sensorType = SensorTypeTB.Text;
 
-                string sensorName = SensorNameTB.Text;
-                string sensorType = SensorTypeTB.Text;
-
-                cmd.Parameters.Add(new SqlParameter("@SensorName", sensorName));
-                cmd.Parameters.Add(new SqlParameter("@SensorType", sensorType));
-
-                cmd.ExecuteNonQuery();
-                con.Close();
-            }
-            catch (Exception)
-            {
-
-                MessageBox.Show("Error when inserting data to the database.");
-            }
-
+            Sensor sensor = new Sensor();
+            sensor.SaveData(sensorName, sensorType);
         }
     }
 }

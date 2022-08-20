@@ -7,11 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="345" Width="430">
     <Grid>
-        <Label Content="Sensor Name" HorizontalAlignment="Left" Margin="25,29,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Normal"/>
-        <Label Content="Sensor Type" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Center" FontSize="24" FontWeight="Normal"/>
-        <TextBox x:Name="SensorNameTB" HorizontalAlignment="Left" Margin="25,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontWeight="Normal" FontSize="24"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="281,264,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="24" Width="115" Click="Button_Click"/>
-        <ComboBox x:Name="ComboSensorType" HorizontalAlignment="Left" Margin="25,198,0,0" VerticalAlignment="Top" Width="196" FontSize="24" FontWeight="Normal"/>
-
+        <TabControl>
+            <TabItem Height="35" Header="Add data">
+                <Grid>
+                    <Label Content="Sensor Name" HorizontalAlignment="Left" Margin="18,23,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Normal"/>
+                    <Label Content="Sensor Type" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Center" FontSize="24" FontWeight="Normal"/>
+                    <TextBox x:Name="SensorNameTB" HorizontalAlignment="Left" Margin="25,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontWeight="Normal" FontSize="24"/>
+                    <Button Content="Save" HorizontalAlignment="Left" Margin="279,217,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="24" Width="115" Click="Button_Click"/>
+                    <ComboBox x:Name="ComboSensorType" HorizontalAlignment="Left" Margin="25,164,0,0" VerticalAlignment="Top" Width="196" FontSize="24" FontWeight="Normal"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

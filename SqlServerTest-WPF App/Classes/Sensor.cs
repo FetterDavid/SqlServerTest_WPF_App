@@ -8,11 +8,13 @@ namespace SqlServerTest_WPF_App.Classes
 {
     internal class Sensor
     {
+        private ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"];
+
         public void SaveData(string sensorName, string sensorType)
         {
             try
             {
-                ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"];
+               
                 SqlConnection con = new SqlConnection(settings.ConnectionString);
                 con.Open();
 
@@ -39,6 +41,20 @@ namespace SqlServerTest_WPF_App.Classes
             {
                 MessageBox.Show("Unexpected error.");
             }
+        }
+        public void RemoveData(string sensorName, string sensorType)
+        {
+            SqlConnection con = new SqlConnection(settings.ConnectionString);
+            con.Open();
+
+            string sqlQuery = " delete from Sensor where SensorName = '"+sensorName+ "' and SensorTypeId = (select SensorTypeId " +
+                "from Sensor_Type where SensorType = '"+sensorType+"'); ";
+
+            SqlCommand cmd = new SqlCommand(sqlQuery,con);
+
+            cmd.ExecuteNonQuery();
+
+            con.Close();
         }
     }
 }

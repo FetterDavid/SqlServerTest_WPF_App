@@ -64,5 +64,19 @@ namespace SqlServerTest_WPF_App
                 ComboSensorType.Items.Add(sensorTypeItem.sensorTypeName);
             }
         }
+
+        private void RemoveButtonClick(object sender, RoutedEventArgs e)
+        {
+            RemoveData();
+        }
+
+        private void RemoveData()
+        {
+            string sensorName = SensorNameTB.Text;
+            string sensorType = ComboSensorType.Text;
+
+            Sensor sensor =new Sensor();
+            sensor.RemoveData(sensorName, sensorType);
+        }
     }
 }

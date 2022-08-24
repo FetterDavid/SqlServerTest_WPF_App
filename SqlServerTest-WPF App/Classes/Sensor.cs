@@ -47,13 +47,13 @@ namespace SqlServerTest_WPF_App.Classes
             SqlConnection con = new SqlConnection(settings.ConnectionString);
             con.Open();
 
-            string sqlQuery = " delete from Sensor where SensorName = '"+sensorName+ "' and SensorTypeId = (select SensorTypeId " +
-                "from Sensor_Type where SensorType = '"+sensorType+"'); ";
+            SqlCommand cmd = new SqlCommand("RemoveSensor",con);
+            cmd.CommandType=CommandType.StoredProcedure;
 
-            SqlCommand cmd = new SqlCommand(sqlQuery,con);
+            cmd.Parameters.AddWithValue("@SensorName", sensorName);
+            cmd.Parameters.AddWithValue("@SensorType", sensorType);
 
             cmd.ExecuteNonQuery();
-
             con.Close();
         }
     }

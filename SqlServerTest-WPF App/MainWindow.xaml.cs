@@ -75,8 +75,20 @@ namespace SqlServerTest_WPF_App
             string sensorName = SensorNameTB.Text;
             string sensorType = ComboSensorType.Text;
 
-            Sensor sensor =new Sensor();
-            sensor.RemoveData(sensorName, sensorType);
+            if (sensorName == "")
+            {
+                MessageBox.Show("Sensor name is invalid.");
+            }
+            else if (sensorType == "")
+            {
+                MessageBox.Show("You have to choose a sensor type.");
+            }
+            else
+            {
+                Sensor sensor = new Sensor();
+                sensor.RemoveData(sensorName, sensorType);
+                SensorNameTB.Text = "";
+            }
         }
     }
 }

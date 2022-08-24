@@ -62,6 +62,7 @@ namespace SqlServerTest_WPF_App
             foreach (SensorType sensorTypeItem in sensorTypeList)
             {
                 ComboSensorType.Items.Add(sensorTypeItem.sensorTypeName);
+                ComboSensorTypeM.Items.Add(sensorTypeItem.sensorTypeName);
             }
         }
 
@@ -88,6 +89,19 @@ namespace SqlServerTest_WPF_App
                 Sensor sensor = new Sensor();
                 sensor.RemoveData(sensorName, sensorType);
                 SensorNameTB.Text = "";
+            }
+        }
+
+        private void ComboSensorTypeM_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            SensoreNamesLB.Items.Clear();
+
+           Sensor sensor = new Sensor();
+            List<string> sensoreNames = sensor.GetData(ComboSensorTypeM.SelectedItem.ToString());
+
+            foreach (string sensorName in sensoreNames)
+            {
+                SensoreNamesLB.Items.Add(sensorName);
             }
         }
     }

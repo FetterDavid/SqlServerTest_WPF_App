@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Windows;
@@ -55,6 +56,31 @@ namespace SqlServerTest_WPF_App.Classes
 
             cmd.ExecuteNonQuery();
             con.Close();
+        }
+        public List<string> GetData(string sensorType)
+        {
+            List<string> sensorNames = new List<string>();
+
+            SqlConnection con = new SqlConnection(settings.ConnectionString);
+            con.Open();
+
+            string sqlQuerry = "select SensorName from sensor where SensorTypeId = (select SensorTypeId from Sensor_Type where SensorType = '"+sensorType+"')";
+
+            SqlCommand cmd = new SqlCommand(sqlQuerry, con);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            if (dr != null)
+            {
+                while (dr.Read())
+                {
+                    sensorNames.Add(dr["SensorName"].ToString());
+                }
+            }
+
+            con.Close();
+
+            return sensorNames;
         }
     }
 }

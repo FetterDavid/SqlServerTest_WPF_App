@@ -8,7 +8,7 @@
         Title="MainWindow" Height="345" Width="430">
     <Grid>
         <TabControl>
-            <TabItem Height="35" Header="Add data">
+            <TabItem Height="35" Header="Add Sensor">
                 <Grid>
                     <Label Content="Sensor Name" HorizontalAlignment="Left" Margin="18,23,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Normal"/>
                     <Label Content="Sensor Type" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Center" FontSize="24" FontWeight="Normal"/>
@@ -16,6 +16,13 @@
                     <Button Content="Save" HorizontalAlignment="Left" Margin="279,217,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="24" Width="115" Click="Button_Click"/>
                     <ComboBox x:Name="ComboSensorType" HorizontalAlignment="Left" Margin="25,164,0,0" VerticalAlignment="Top" Width="196" FontSize="24" FontWeight="Normal"/>
                     <Button x:Name="Remove" Content="Remove" HorizontalAlignment="Left" Margin="279,164,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="24" Width="115" Click="RemoveButtonClick"/>
+                </Grid>
+            </TabItem>
+            <TabItem Height="35" Header="Manage Sensors">
+                <Grid>
+                    <Label Content="Sensor Type" HorizontalAlignment="Left" Margin="10,-4,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Normal"/>
+                    <ComboBox x:Name="ComboSensorTypeM" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Width="196" FontSize="24" FontWeight="Normal" SelectionChanged="ComboSensorTypeM_SelectionChanged"/>
+                    <ListBox x:Name="SensoreNamesLB" Width="400" Height="180" Margin="10,86,214,20"/>
                 </Grid>
             </TabItem>
         </TabControl>
